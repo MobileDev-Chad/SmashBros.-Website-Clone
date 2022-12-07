@@ -3,33 +3,15 @@ import React from "react";
 const Header = () => {
   return (
     <>
-      <div
-        style={{
-          position: "absolute",
-          top: "0px",
-          left: "0px",
-        }}
-      >
-        <img
-          src={require(`../../images/Nintendo.png`)}
-          style={{ height: "3rem", width: "7.68rem" }}
-          alt=""
-        />
-      </div>
+      <section className="navbar center pointer">
+        <div className="navbar-logo">
+          <img src={require(`../../images/Nintendo.png`)} alt="" />
+        </div>
 
-      <div
-        style={{
-          position: "absolute",
-          top: "0px",
-          right: "0px",
-        }}
-      >
-        <img
-          src={require(`../../images/NintendoSwitchLogo.png`)}
-          style={{ height: "5.2rem", width: "4.68rem" }}
-          alt=""
-        />
-      </div>
+        <div className="navbar-logo pointer">
+          <img src={require(`../../images/NintendoSwitchLogo.png`)} alt="" />
+        </div>
+      </section>
     </>
   );
 };

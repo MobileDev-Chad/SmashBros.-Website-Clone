@@ -1,7 +1,6 @@
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 import "@splidejs/splide/dist/css/splide.min.css";
-import Header from "../../common/header/Header";
 
 const Carousel = () => {
   const renderSlider = () => {
@@ -9,7 +8,9 @@ const Carousel = () => {
     for (let i = 1; i < 7; i++) {
       results.push(
         <SplideSlide key={i}>
-          <img src={require(`../../images/hero0${i}_en.jpg`)} alt="Image 1" />
+          <div className="pointer">
+            <img src={require(`../../images/hero0${i}_en.jpg`)} alt="Image 1" />
+          </div>
         </SplideSlide>
       );
     }
@@ -26,6 +27,8 @@ const Carousel = () => {
           arrows: false,
           pagination: false,
           perPage: 4,
+          cover: true,
+          height: "100%",
 
           autoScroll: {
             pauseOnHover: false,
@@ -38,7 +41,6 @@ const Carousel = () => {
       >
         {renderSlider()}
       </Splide>
-      <Header />
     </>
   );
 };
