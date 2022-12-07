@@ -2,7 +2,7 @@ import React from "react"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import Header from "../common/header/Header"
 import Home from "../home/Home"
-// import About from "../about/About"
+ import About from "../about/About"
 // import Fighters from "../fighters/Fighters"
 // import HowtoSmash from "../howtosmash/HowtoSmash"
 // import Stages from "../stages/Stages"
@@ -17,7 +17,8 @@ const Pages = () => {
         <Header />
         <Switch>
           <Route exact path='/' component={Home} />
-          {/* <Route exact path='/about' component={About} />
+          <Route exact path='/about' component={About} />
+          {/* <Route exact path='/about' component={About} 
           <Route exact path='/fighters' component={Fighters} />
           <Route exact path='/howtosmash' component={HowtoSmash} />
           <Route exact path='/stages' component={Stages} />
