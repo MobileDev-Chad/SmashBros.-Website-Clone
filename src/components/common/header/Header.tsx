@@ -20,7 +20,10 @@ const Header = () => {
 
             <p>|</p>
             <div className="login">
-              <i className="bi bi-person-fill" style={{fontSize: "1.5rem"}}></i>
+              <i
+                className="bi bi-person-fill"
+                style={{ fontSize: "1.5rem" }}
+              ></i>
               <h3>Log in</h3>
             </div>
           </div>
