@@ -14,11 +14,13 @@ const Header = () => {
 
         <div className="navbar-logo center">
           <div className="parallelogram center">
-            
-              <h3><i className="bi bi-globe"></i>Select Language</h3>
-            
+            <h3>
+              <i className="bi bi-globe2"></i>&nbsp;&nbsp;&nbsp;Select Language
+            </h3>
+
             <p>|</p>
-            <div><i className="bi bi-person"></i>
+            <div className="login">
+              <i className="bi bi-person-fill" style={{fontSize: "1.5rem"}}></i>
               <h3>Log in</h3>
             </div>
           </div>
