@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,400i,700&display=swap");
 
 /* Common  Styles*/
 * {
@@ -8,7 +9,7 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style-type: none;
-  font-family: "Poppins", sans-serif;
+  font-family: "Titillium Web", sans-serif;
 
   /* outline: solid 1px red; */
 }
@@ -24,6 +25,7 @@ html {
 }
 body {
   background-color: #ffffff;
+  overflow: scroll; /* Show scrollbars */
 }
 .section {
   height: auto;
@@ -54,8 +56,12 @@ body {
 }
 
 .pointer:hover {
- cursor: pointer;
- }
+  cursor: pointer;
+}
+
+a {
+  color: white;
+}
 /* End of Common Styles */
 
 /* Start of Navbar */
@@ -74,10 +80,28 @@ body {
 }
 .navbar-logo:nth-of-type(2) img {
   height: 8rem;
-  width: 7.4rem;
+  width: 7.8rem;
+}
+
+.parallelogram {
+  text-align: center;
+  font-size: 10px;
+  background: linear-gradient(65deg, transparent 50%, rgba(0, 0, 0, 0.8) 50%)
+      left no-repeat,
+    linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)) 30px 0
+      no-repeat;
+
+  background-size: 30px 100%, 100% 100%;
+  width: 280px;
+  height: 35px;
+  line-height: 60px;
+  padding: 0 20px;
+  color: rgba(255, 255, 255, 0.747);
+  margin-bottom: 4.46rem;
+  position: relative;
+  justify-content: space-evenly;
 }
 
 /*  End of Navbar */
 
- /* Start of Home */
- 
+/* Start of Home */
