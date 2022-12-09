@@ -60,7 +60,7 @@ body {
 }
 
 a {
-  color: white;
+  color: black;
 }
 
 /* End of Common Styles */
@@ -68,7 +68,8 @@ a {
 /* Start of Navbar */
 .navbar {
   width: 100%;
-  position: fixed;
+  position: absolute;
+  top:0;
   z-index: 5;
   justify-content: space-between;
 }
@@ -77,7 +78,7 @@ a {
   height: 5.2rem;
   width: 12.5rem;
   position: absolute;
-  top: 0.025rem;
+  top: 0;
 }
 .navbar-logo:nth-of-type(2) img {
   height: 8rem;
@@ -99,7 +100,7 @@ a {
   padding: 0 22px;
   color: rgba(255, 255, 255, 0.747);
   margin-bottom: 4.3rem;
-  position: relative;
+  top:0;
   justify-content: space-evenly;
 }
 .login {
