@@ -7,7 +7,7 @@ const Carousel = () => {
     const results = [];
     for (let i = 1; i < 7; i++) {
       results.push(
-        <SplideSlide key={i} >
+        <SplideSlide key={i}>
           <div className="pointer">
             <img src={require(`../../images/hero0${i}_en.jpg`)} alt="Image 1" />
           </div>
