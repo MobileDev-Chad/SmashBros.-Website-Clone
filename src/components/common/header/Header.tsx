@@ -15,7 +15,11 @@ const Header = () => {
         <div className="navbar-logo center">
           <div className="parallelogram center">
             <h3 className="pointer">
-              <i className="bi bi-globe2" style={{fontSize:"1.45rem"}}></i>&nbsp;&nbsp;&nbsp;Select Language
+              <i
+                className="bi bi-globe2"
+                style={{ fontSize: "1.45rem", color: "grey" }}
+              ></i>
+              &nbsp;&nbsp;&nbsp;Select Language
             </h3>
 
             <p>|</p>

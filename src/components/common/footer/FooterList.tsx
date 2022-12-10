@@ -8,7 +8,11 @@ type TabProps = {
 };
 
 const FooterList = ({ text, path, icon, theme }: TabProps) => {
-  return <div>Footer</div>;
+  return (
+    <>
+      <section>Footer</section>;
+    </>
+  );
 };
 
 export default FooterList;

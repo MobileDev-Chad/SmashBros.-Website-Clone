@@ -20,14 +20,14 @@ const Footer = () => {
           </div>
         </div>
 
-        {tabs.map((t) => (
+        {/* {tabs.map((t) => (
           <FooterList
             text={t.text}
             path={t.path}
             icon={t.icon}
             theme={t.theme}
           />
-        ))}
+        ))} */}
 
         <footer className="footer">
           <div className="footer-top"></div>
@@ -50,8 +50,23 @@ const Footer = () => {
                 ATLUS / Microsoft / SNK CORPORATION. / Mojang AB /{" "}
               </p>
               <p className="copyright"> Disney</p>
+
               <br />
-              <p className="copyright bold">
+            </div>
+
+            <div className="footer-middle-right">
+              <div>
+                <img src={require("../../images/Ratings.jpg")} alt="" />
+              </div>
+              <div>
+                <img src={require("../../images/Seal.jpg")} alt="" />
+              </div>
+            </div>
+          </div>
+          
+          <div className="game-text">
+            
+            <p className="copyright bold">
                 {" "}
                 Screenshots and footage depict game in development.
               </p>
@@ -65,16 +80,6 @@ const Footer = () => {
                 multiplayer mode. Games, systems, amiibo and some accessories
                 sold separately.
               </p>
-            </div>
-
-            <div className="footer-middle-right">
-              <div>
-                <img src="" alt="" />
-              </div>
-              <div>
-                <img src="" alt="" />
-              </div>
-            </div>
           </div>
 
           <div className="footer-bottom">

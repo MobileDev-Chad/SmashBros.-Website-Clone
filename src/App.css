@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,400i,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,400i,500,600,700&display=swap");
 
 /* Common  Styles*/
 * {
@@ -11,7 +11,7 @@
   list-style-type: none;
   font-family: "Titillium Web", sans-serif;
 
-  /* outline: solid 1px red; */
+   /* outline: solid 1px red;  */
 }
 html {
   font-size: 62.5%;
@@ -26,6 +26,8 @@ html {
 body {
   background-color: #ffffff;
   overflow: scroll; /* Show scrollbars */
+  overflow-x: hidden;
+
 }
 .section {
   height: auto;
@@ -62,6 +64,9 @@ body {
 a {
   color: black;
 }
+.bold {
+  font-weight: bold;
+}
 
 /* End of Common Styles */
 
@@ -69,7 +74,7 @@ a {
 .navbar {
   width: 100%;
   position: absolute;
-  top:0;
+  top: 0;
   z-index: 5;
   justify-content: space-between;
 }
@@ -100,7 +105,7 @@ a {
   padding: 0 22px;
   color: rgba(255, 255, 255, 0.747);
   margin-bottom: 4.3rem;
-  top:0;
+  top: 0;
   justify-content: space-evenly;
 }
 .login {
@@ -115,3 +120,85 @@ a {
 /*  End of Navbar */
 
 /* Start of Home */
+/* End of Home */
+
+/* Start of Footer */
+.footer {
+  width: 100%;
+  /* height: 15rem; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* align-items: center; */
+  /* padding: 4rem 0 3rem 0; */
+}
+.footer-middle {
+  width: 100%;
+  display: flex;
+  justify-content:space-between;
+  padding: 2rem 2rem 0rem 2rem;
+}
+.footer-middle-right {
+  display: flex;
+}
+.game-text {
+  padding:  0rem 2rem 2rem 2rem;
+
+}
+.copyright {
+  font-size: 1.15rem;
+}
+
+.footer-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-top: 0.1rem solid #dddddd;
+}
+
+.footer-list {
+  display: flex;
+  margin-right: 2rem;
+}
+
+.footer-list li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0px 0px 12px;
+}
+
+.footer-list li i {
+  font-size: 2rem;
+  color: #000000;
+}
+
+.footer-list a {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #262626;
+  display: inline-block;
+  position: relative;
+}
+
+.footer-list a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 4px;
+  bottom: -5px;
+  left: 0;
+  background-color: #4e4e4e;
+  transform-origin: bottom left;
+  transition: transform 0.25s ease-out;
+}
+
+.footer-list a:hover::after {
+  transform: scaleX(1);
+}
+/* .footer-list img {
+  width: 3.8rem;
+  opacity: 0.6;
+}  */
+/* End of Footer */
