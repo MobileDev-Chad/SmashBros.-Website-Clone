@@ -6,7 +6,10 @@ const Purchase = () => {
       <h2>Super Smash Bros. Ultimate</h2>
       <div className="purchase-divider"></div>
       <h1 className="purchase-date">12/7/2018</h1>
-      <button>Buy Now</button>
+
+      <button className="button shine">
+        Buy Now
+      </button>
       <div className="purchase-online">
         <img src={require("../../images/online.png")} alt="" />
 
