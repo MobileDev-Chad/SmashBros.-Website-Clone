@@ -33,13 +33,13 @@ export const tabs: TabType[] = [
   {
     text: "Stages",
     path: "/stages",
-    icon: "fa-solid fa-trophy",
+    icon: "bi bi-layers-fill",
     theme: "orange",
   },
   {
     text: "Items",
     path: "/items",
-    icon: "fa-solid fa-trophy",
+    icon: "bi bi-trophy-fill",
     theme: "Yellow",
   },
   {

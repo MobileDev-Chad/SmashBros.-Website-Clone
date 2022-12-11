@@ -8,29 +8,35 @@ const Footer = () => {
       <section>
         <div className="footer-heading">
           <div>
-            <h5>Share:</h5>
-            <img src="" alt="" />
-            <img src="" alt="" />
+            <h3>Share:</h3>
+            <img src={require('../../images/twitter.jpg')} alt="" /> 
+            <img src={require('../../images/facebook.png')} alt="" /> 
+            
           </div>
           <div>
             <i
               className="bi bi-caret-up-fill"
-              style={{ fontSize: "4rem", color: "red" }}
+              style={{ fontSize: "3.25rem", color: "red" }}
             ></i>
           </div>
         </div>
 
-        {/* {tabs.map((t) => (
-          <FooterList
-            text={t.text}
-            path={t.path}
-            icon={t.icon}
-            theme={t.theme}
-          />
-        ))} */}
-
         <footer className="footer">
-          <div className="footer-top"></div>
+          <div className="footer-top">
+            {" "}
+            <div className="footer-grid-container">
+              
+                {tabs.map((t) => (
+                  <FooterList
+                    text={t.text}
+                    path={t.path}
+                    icon={t.icon}
+                    theme={t.theme}
+                  />
+                ))}
+              
+            </div>
+          </div>
           <div className="footer-middle">
             <div className="footer-middle-left">
               <p className="copyright">&copy; 2018 Nintendo</p>
@@ -63,23 +69,22 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          
+
           <div className="game-text">
-            
             <p className="copyright bold">
-                {" "}
-                Screenshots and footage depict game in development.
-              </p>
-              <p className="copyright bold">
-                {" "}
-                In-game terms on this website are subject to change.
-              </p>
-              <p className="copyright bold">
-                {" "}
-                Additional games, systems and/or accessories may be required for
-                multiplayer mode. Games, systems, amiibo and some accessories
-                sold separately.
-              </p>
+              {" "}
+              Screenshots and footage depict game in development.
+            </p>
+            <p className="copyright bold">
+              {" "}
+              In-game terms on this website are subject to change.
+            </p>
+            <p className="copyright bold">
+              {" "}
+              Additional games, systems and/or accessories may be required for
+              multiplayer mode. Games, systems, amiibo and some accessories sold
+              separately.
+            </p>
           </div>
 
           <div className="footer-bottom">

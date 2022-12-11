@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 type TabProps = {
   text: string;
@@ -10,7 +11,9 @@ type TabProps = {
 const FooterList = ({ text, path, icon, theme }: TabProps) => {
   return (
     <>
-      <section>Footer</section>;
+      <Link to={path} className="class-link" key={text}>
+        <i className={icon}></i> {text}
+      </Link>
     </>
   );
 };
