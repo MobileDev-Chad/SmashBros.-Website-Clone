@@ -1,6 +1,7 @@
 import React from "react";
 import FooterList from "./FooterList";
 import { tabs } from "../../data/tabs";
+import Purchase from "../../home/purchase/Purchase";
 
 const Footer = () => {
   return (
@@ -9,9 +10,8 @@ const Footer = () => {
         <div className="footer-heading">
           <div>
             <h3>Share:</h3>
-            <img src={require('../../images/twitter.jpg')} alt="" /> 
-            <img src={require('../../images/facebook.png')} alt="" /> 
-            
+            <img src={require("../../images/twitter.jpg")} alt="" />
+            <img src={require("../../images/facebook.png")} alt="" />
           </div>
           <div>
             <i
@@ -22,19 +22,18 @@ const Footer = () => {
         </div>
 
         <footer className="footer">
+          <Purchase />
           <div className="footer-top">
             {" "}
             <div className="footer-grid-container">
-              
-                {tabs.map((t) => (
-                  <FooterList
-                    text={t.text}
-                    path={t.path}
-                    icon={t.icon}
-                    theme={t.theme}
-                  />
-                ))}
-              
+              {tabs.map((t) => (
+                <FooterList
+                  text={t.text}
+                  path={t.path}
+                  icon={t.icon}
+                  theme={t.theme}
+                />
+              ))}
             </div>
           </div>
           <div className="footer-middle">
@@ -71,15 +70,15 @@ const Footer = () => {
           </div>
 
           <div className="game-text">
-            <p className="copyright bold">
+            <p className="copyright ">
               {" "}
               Screenshots and footage depict game in development.
             </p>
-            <p className="copyright bold">
+            <p className="copyright ">
               {" "}
               In-game terms on this website are subject to change.
             </p>
-            <p className="copyright bold">
+            <p className="copyright ">
               {" "}
               Additional games, systems and/or accessories may be required for
               multiplayer mode. Games, systems, amiibo and some accessories sold
