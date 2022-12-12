@@ -11,8 +11,8 @@ type TabProps = {
 const FooterList = ({ text, path, icon, theme }: TabProps) => {
   return (
     <>
-      <Link to={path} className="class-link" key={text}>
-        <i className={icon} id="icon"></i> {text}
+      <Link to={path} className="class-link" id="hero-link" key={text}>
+        <i className={icon} id="icon-link" ></i> {text}
       </Link>
     </>
   );

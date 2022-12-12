@@ -23,7 +23,7 @@ const Purchase = () => {
           Agreement, including the Purchase and Subscription terms, apply.
         </p>
       </div>
-      <img src={require("../../images/amiibo_logo.webp")} id="amiibo" alt="" />
+      <img src={require("../../images/amiibo.jpg")} id="amiibo" alt="" />
     </section>
   );
 };
