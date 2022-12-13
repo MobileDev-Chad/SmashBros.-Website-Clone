@@ -10,6 +10,7 @@ const Carousel = () => {
         <SplideSlide key={i}>
           <div className="pointer">
             <img src={require(`../../images/hero0${i}_en.jpg`)} alt="Image 1" />
+
           </div>
         </SplideSlide>
       );

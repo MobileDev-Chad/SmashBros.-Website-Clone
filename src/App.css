@@ -146,7 +146,7 @@ a:link {
       no-repeat;
 
   background-size: 30px 100%, 100% 100%;
-  width: 283px;
+  width: 285px;
   height: 37px;
   line-height: 12px;
   padding: 0 22px;
@@ -246,23 +246,57 @@ a:link {
   margin-top: 3.18rem;
 }
 .hero-reveal img:hover {
-  opacity: 0.1;
+  opacity: 0.75;
 
 }
-
 
 /* End of Hero */
 
 /* Start of VideoCarousel */
+
 .splide__slide {
   height: 350px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 10px;
-  margin: 40px 20px 20px 20px;
   background-color: rgba(244, 244, 244, 0.1);
   cursor: pointer;
+}
+
+#triangle-topleft {
+  position: absolute;
+  border-top: 185px solid rgb(255, 255, 255);
+  border-right: 185px solid transparent;
+  -webkit-filter: drop-shadow(12px 12px 11px rgba(0,0,0,0.5));
+  filter: drop-shadow(12px 12px 11px rgba(0,0,0,0.5));
+  z-index: 10;
+}
+#triangle-topleft .inner {
+  position: absolute;
+  top: -14rem;
+  left: -1rem;
+  font-size: 5.8rem;
+  font-weight: 700;
+  transform: rotate(-46deg);
+}
+
+#triangle-bottomright {
+  position: absolute;
+  right:0;
+  top: 133.5rem;
+  border-top: 115px solid rgb(255, 255, 255);
+  border-right: 120px solid transparent;
+  -webkit-filter: drop-shadow(12px 12px 11px rgba(0,0,0,0.5));
+  filter: drop-shadow(12px 12px 11px rgba(0,0,0,0.5));
+  transform: rotate(-180deg);
+
+  z-index: 10;
+}
+.video-divider {
+  width: 100%;
+  height:2px;
+  background-color: #000;
+  margin-bottom: 10rem;
 }
 
 /* End of VideoCarousel */
@@ -276,12 +310,13 @@ a:link {
 }
 .purchase h2 {
   font-size: 1.5rem;
+  font-weight: 300;
 }
 .purchase-divider {
   margin: 1rem 0rem;
   background-color: #888787;
-  height: 6px;
-  width: 30rem;
+  height: 4px;
+  width: 28rem;
 }
 .purchase-date {
   font-size: 6rem;

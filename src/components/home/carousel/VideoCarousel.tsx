@@ -1,17 +1,17 @@
 import { Splide } from "@splidejs/react-splide";
 import { Video } from "@splidejs/splide-extension-video";
+
 import "@splidejs/splide/dist/css/splide.min.css";
 
 const SPLIDE_OPTIONS = {
   type: "loop",
   drag: true,
   arrows: false,
-  pagination: false,
   perMove: 1,
-  start: 1,
-  gap: 20,
+  pagination: false,
+  start: 6,
+  gap: 7,
   cover: true,
-  swipeDistanceThreshold: 40,
   perPage: 3,
   video: {
     autoplay: false,
@@ -24,15 +24,22 @@ const VideoCarousel = () => {
     <>
       <div
         style={{
-          height: "auto",
-          padding: "4.5rem 0rem 0.5rem 0rem",
+          padding: "4.5rem 0.25rem 0.5rem 0.8rem",
         }}
       >
+        <div id="triangle-topleft">
+          <div className="inner">
+            Videos
+          </div>
+        </div>
+        <div id="triangle-bottomright"></div>
+
         <Splide
           onMoved={() => console.log("Slide moved!")}
           options={SPLIDE_OPTIONS}
           extensions={{ Video }}
         >
+
           <li
             className="splide__slide"
             data-splide-youtube="https://www.youtube.com/watch?v=82Q2XTJ8jWk"
@@ -70,7 +77,10 @@ const VideoCarousel = () => {
             <img src={require("../../images/img6.jpg")} alt="" />
           </li>
         </Splide>
+
       </div>
+
+        <div className="video-divider"></div>
     </>
   );
 };
