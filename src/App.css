@@ -246,8 +246,8 @@ a:link {
   margin-top: 3.18rem;
 }
 .hero-reveal img:hover {
-  -webkit-filter: blur(1px); /* Safari 6.0 - 9.0 */
-  filter: blur(1px);
+  opacity: 0.1;
+
 }
 
 
@@ -265,6 +265,7 @@ a:link {
 }
 .splide__slide img {
   height:350px;
+  cursor: pointer;
 }
 /* End of VideoCarousel */
 
