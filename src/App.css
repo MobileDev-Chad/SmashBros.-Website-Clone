@@ -262,11 +262,9 @@ a:link {
   border-radius: 10px;
   margin: 40px 20px 20px 20px;
   background-color: rgba(244, 244, 244, 0.1);
-}
-.splide__slide img {
-  height:350px;
   cursor: pointer;
 }
+
 /* End of VideoCarousel */
 
 /* Start of Purchase */

@@ -10,7 +10,6 @@ const SPLIDE_OPTIONS = {
   perMove: 1,
   start: 1,
   gap: 20,
-  focus: 'center',
   cover: true,
   swipeDistanceThreshold: 40,
   perPage: 3,
