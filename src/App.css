@@ -1,3 +1,4 @@
+@import url("https://fonts.cdnfonts.com/css/roboto-condensed?styles=14410,14405,14407,14406,14408,14409,14410");
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
 
 /* Common  Styles*/
@@ -8,12 +9,13 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style-type: none;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
 
-  /* outline: solid 1px red; */
+  /* outline: solid 1px red;  */
 }
 html {
   font-size: 62.5%;
+  line-height: 1.15;
   cursor: default;
   scroll-behavior: smooth;
 }
@@ -61,6 +63,9 @@ body {
 
 a {
   color: black;
+}
+a:link {
+  text-decoration: none;
 }
 .bold {
   font-weight: bold;
@@ -154,6 +159,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin-right: 1.8rem;
 }
 .login i:hover {
   color: aqua;
@@ -173,8 +179,8 @@ a {
 .hero-section img {
   height: 21.3rem;
   position: absolute;
-  bottom:-10rem;
-left: -66.5rem;
+  bottom: -10rem;
+  left: -66.5rem;
   -webkit-filter: drop-shadow(12px 12px 7px rgba(255, 255, 255, 0.5));
   filter: drop-shadow(12px 12px 7px rgba(255, 255, 255, 0.5));
 }
@@ -190,19 +196,77 @@ left: -66.5rem;
   padding: 17px 16px 10px 16px;
   color: rgb(255, 255, 255);
   font-size: 1.3rem;
-  font-weight: 500;
+  font-weight: 600;
+  white-space: nowrap;
 }
 
 .hero-grid-container i {
-  font-size: 49px;
+  display: block;
+  font-size: 50px;
 }
+
+.hero-purchase-date {
+  width: 72%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 8rem;
+}
+.hero-parallelogram-1 {
+  width: 7px;
+  height: 47px;
+  margin-right: 0.5rem;
+  transform: skew(20deg);
+  background: rgb(0, 0, 0);
+}
+.hero-parallelogram-2 {
+  width: 17px;
+  height: 47px;
+  margin-right: 1.7rem;
+  transform: skew(20deg);
+  background: rgb(0, 0, 0);
+}
+.hero-purchase-date h1 {
+  font-size: 4rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+  color: #000;
+  margin-right: 2rem;
+}
+
+.button {
+  border: 1px solid orange;
+  background-color: #000000;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: orange;
+}
+
 .hero-reveal img {
-  margin-top: 18.2rem;
+  margin-top: 3.18rem;
 }
-.blog-section {
-  height: 50vh;
+.hero-reveal img:hover {
+  -webkit-filter: blur(1px); /* Safari 6.0 - 9.0 */
+  filter: blur(1px);
 }
+
+
 /* End of Hero */
+
+/* Start of VideoCarousel */
+.splide__slide {
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin: 40px 20px 20px 20px;
+  background-color: rgba(244, 244, 244, 0.1);
+}
+.splide__slide img {
+  height:350px;
+}
+/* End of VideoCarousel */
 
 /* Start of Purchase */
 .purchase {
@@ -232,6 +296,7 @@ left: -66.5rem;
   font-size: 1.6rem;
   font-weight: bold;
   color: orange;
+  white-space: nowrap;
 }
 
 .purchase-online {
@@ -241,7 +306,7 @@ left: -66.5rem;
   margin-right: 6rem;
 }
 .purchase-online p {
-  font-size: 11px;
+  font-size: 11.5px;
   font-weight: 400;
 }
 .purchase-online p:hover {
@@ -345,12 +410,11 @@ left: -66.5rem;
   cursor: text;
 }
 .game-text p {
-  font-weight: bold;
-  font-size: 1.1rem;
-  line-height: 1.8rem;
+  font-weight: 400;
+  font-size: 1.2rem;
 }
 .copyright {
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   line-height: 1.7rem;
   font-weight: 300;
 }
@@ -364,14 +428,15 @@ left: -66.5rem;
 
 .footer-list {
   display: flex;
-  margin-right: 2rem;
+  justify-content: flex-start;
 }
 
 .footer-list li {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 14px 0px 0px 12px;
+  
+  padding: 10px 14px 0px 12px;
 }
 
 .footer-list li i {
@@ -381,10 +446,8 @@ left: -66.5rem;
 
 .footer-list a {
   font-size: 1.2rem;
-  font-weight: 300;
+  font-weight: 500;
   color: #262626;
-  display: inline-block;
-  position: relative;
 }
 
 .footer-list a::after {

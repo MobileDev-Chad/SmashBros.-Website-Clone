@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../../common/button/Button";
 
 const Purchase = () => {
   return (
@@ -7,9 +8,7 @@ const Purchase = () => {
       <div className="purchase-divider"></div>
       <h1 className="purchase-date">12/7/2018</h1>
 
-      <button className="button shine">
-        Buy Now
-      </button>
+      <Button />
       <div className="purchase-online">
         <img src={require("../../images/online.png")} alt="" />
 

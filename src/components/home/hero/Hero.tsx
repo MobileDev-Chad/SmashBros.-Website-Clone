@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../../common/button/Button";
 import { tabs } from "../../data/tabs";
 import HeroList from "./HeroList";
 
@@ -18,9 +19,19 @@ const Hero = () => {
           ))}
         </div>
       </div>
-      <div className="hero-reveal">
+
+      <div className="hero-purchase-date">
+        <div className="hero-parallelogram-1"></div>
+        <div className="hero-parallelogram-2"></div>
+        <h1 className="">December 7th, 2018</h1>
+
+        <Button width="16rem" height="5rem" />
+      </div>
+
+      <div className="hero-reveal pointer">
         <img src={require(`../../images/reveal.jpg`)} alt="" />
       </div>
+
       <div className="blog-section"></div>
     </section>
   );

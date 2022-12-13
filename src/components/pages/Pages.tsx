@@ -20,14 +20,14 @@ const Pages = () => {
 
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/about" component={About} />
+          {/* <Route exact path="/about" component={About} />
           <Route exact path="/fighters" component={Fighters} />
           <Route exact path="/howtosmash" component={HowToSmash} />
           <Route exact path="/stages" component={Stages} />
           <Route exact path="/items" component={Items} />
           <Route exact path="/music" component={Music} />
           <Route exact path="/videos" component={Videos} />
-          <Route exact path="/blog" component={Blog} />
+          <Route exact path="/blog" component={Blog} /> */}
         </Switch>
 
         <Footer />
