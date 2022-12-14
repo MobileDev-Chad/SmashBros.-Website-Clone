@@ -28,18 +28,18 @@ const VideoCarousel = () => {
         }}
       >
         <div id="triangle-topleft">
-          <div className="inner">
-            Videos
-          </div>
+          <div className="inner-text">Videos</div>
         </div>
-        <div id="triangle-bottomright"></div>
+        <div id="triangle-bottomright">
+          <div className="inner-text">Videos</div>
+          <i className="bi bi-arrow-right pointer"></i>
+        </div>
 
         <Splide
           onMoved={() => console.log("Slide moved!")}
           options={SPLIDE_OPTIONS}
           extensions={{ Video }}
         >
-
           <li
             className="splide__slide"
             data-splide-youtube="https://www.youtube.com/watch?v=82Q2XTJ8jWk"
@@ -77,10 +77,9 @@ const VideoCarousel = () => {
             <img src={require("../../images/img6.jpg")} alt="" />
           </li>
         </Splide>
-
       </div>
 
-        <div className="video-divider"></div>
+      <div className="video-divider"></div>
     </>
   );
 };

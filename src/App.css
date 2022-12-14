@@ -1,5 +1,4 @@
 @import url("https://fonts.cdnfonts.com/css/roboto-condensed?styles=14410,14405,14407,14406,14408,14409,14410");
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
 
 /* Common  Styles*/
 * {
@@ -19,13 +18,22 @@ html {
   cursor: default;
   scroll-behavior: smooth;
 }
+
+:root {
+  --primary: black;
+  --secondary: #fff;
+  --text: rgb(173, 173, 173);
+}
+h1,h2,h3,h4 {
+font-weight: 300;
+}
 .center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 body {
-  background-color: #ffffff;
+  background-color: var(--secondary);
   overflow: scroll; /* Show scrollbars */
   overflow-x: hidden;
 }
@@ -38,23 +46,6 @@ body {
   align-items: center;
   justify-content: space-evenly;
   /* color: #eee; */
-}
-.section-heading {
-  font-size: 1.5rem;
-  margin: 0 auto;
-  margin-top: 5rem;
-  width: 10rem;
-  text-align: center;
-  font-weight: 500;
-  background-color: #ffdd00;
-  color: black;
-}
-
-.section-heading-two {
-  font-size: 4rem;
-  font-weight: 600;
-  color: #eee;
-  margin-bottom: 5rem;
 }
 
 .pointer:hover {
@@ -271,11 +262,11 @@ a:link {
   filter: drop-shadow(12px 12px 11px rgba(0,0,0,0.5));
   z-index: 10;
 }
-#triangle-topleft .inner {
+#triangle-topleft .inner-text {
   position: absolute;
-  top: -14rem;
+  top: -15rem;
   left: -1rem;
-  font-size: 5.8rem;
+  font-size: 5.9rem;
   font-weight: 700;
   transform: rotate(-46deg);
 }
@@ -289,32 +280,56 @@ a:link {
   -webkit-filter: drop-shadow(12px 12px 11px rgba(0,0,0,0.5));
   filter: drop-shadow(12px 12px 11px rgba(0,0,0,0.5));
   transform: rotate(-180deg);
-
   z-index: 10;
 }
+#triangle-bottomright .inner-text {
+  position: absolute;
+  top: -11rem;
+  left: 1rem;
+  font-size: 2.8rem;
+  font-weight: 700;
+  transform: rotate(180deg);
+}
+#triangle-bottomright i {
+  position: absolute;
+top: -9rem;
+left: 1rem;
+  color: rgb(0, 0, 0);
+  font-size: 5rem;
+  transform: rotate(180deg);
+}
+#triangle-bottomright i:hover {
+  color: rgb(255, 0, 0);
+}
+
 .video-divider {
   width: 100%;
   height:2px;
   background-color: #000;
-  margin-bottom: 10rem;
+  margin-bottom: 8.5rem;
 }
-
 /* End of VideoCarousel */
+
+/* Start of Blog */
+
+
+
+
+/* End of Blog */
 
 /* Start of Purchase */
 .purchase {
   position: relative;
   padding: 4rem 0rem;
   background-color: #000000;
-  color: rgb(173, 173, 173);
+  color: var(--text);
 }
 .purchase h2 {
   font-size: 1.5rem;
-  font-weight: 300;
 }
 .purchase-divider {
   margin: 1rem 0rem;
-  background-color: #888787;
+  background-color: var(--text);
   height: 4px;
   width: 28rem;
 }
@@ -326,7 +341,7 @@ a:link {
 .purchase button {
   padding: 1.1rem 9rem;
   border: 1px solid orange;
-  background-color: #000000;
+  background-color: var(--primary);
   font-size: 1.6rem;
   font-weight: bold;
   color: orange;
@@ -374,8 +389,8 @@ a:link {
   align-items: center;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   padding: 0.2rem 2rem;
-  color: rgb(255, 255, 255);
-  background-color: #000000;
+  color: var(--text);
+  background-color: var(--primary);
 }
 .footer-heading h3 {
   align-self: center;
@@ -422,7 +437,7 @@ a:link {
 .class-link:hover {
   background-size: 100% 100%;
   transition: 0.4s;
-  color: #000000;
+  color: var(--primary);
 }
 
 .footer-middle {
@@ -434,6 +449,9 @@ a:link {
 
 .footer-middle-left {
   cursor: text;
+}
+.footer-middle-left .copyright {
+  color: #7a7a7a;
 }
 .footer-middle-right {
   display: flex;
@@ -475,13 +493,13 @@ a:link {
 
 .footer-list li i {
   font-size: 2rem;
-  color: #000000;
+  color: var(--primary);
 }
 
 .footer-list a {
   font-size: 1.2rem;
   font-weight: 500;
-  color: #262626;
+  color: var(--primary);
 }
 
 .footer-list a::after {
@@ -502,6 +520,10 @@ a:link {
 }
 
 /* End of Footer */
+
+/* /////////////////////////////////////////// */
+
+/* Media Queries */
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
