@@ -2,14 +2,14 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Header from "../common/header/Header";
 import Home from "../home/Home";
-import About from "../about/About";
-import Fighters from "../fighters/Fighters";
-import HowToSmash from "../howtosmash/HowToSmash";
-import Stages from "../stages/Stages";
-import Items from "../items/Items";
-import Music from "../music/Music";
-import Videos from "../videos/Videos";
-import Blog from "../blog/Blog";
+// import About from "../about/About";
+// import Fighters from "../fighters/Fighters";
+// import HowToSmash from "../howtosmash/HowToSmash";
+// import Stages from "../stages/Stages";
+// import Items from "../items/Items";
+// import Music from "../music/Music";
+// import Videos from "../videos/Videos";
+// import Blog from "../blog/Blog";
 import Footer from "../common/footer/Footer";
 
 const Pages = () => {

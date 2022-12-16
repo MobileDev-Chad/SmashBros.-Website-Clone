@@ -164,8 +164,10 @@ a:link {
 /* Start of Hero */
 .hero-section {
   display: flex;
-  position: relative;
+  justify-content: center;
   align-items: center;
+  position: absolute;
+  margin-bottom: 37rem;
 }
 .hero-section img {
   height: 21.3rem;
